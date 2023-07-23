@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Contact :: Food Cooking Classes</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="./images/logo.jpg" alt="Food classes" id="logo"></a>
+        <h1>Food Cooking Classes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>
+            Reach Out to Us
+        </h2>
+        <form autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required autofocus>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="telephone">Phone</label>
+                <input type="tel" name="telephone" id="telephone">
+                <br>
+                <label for="emp">Employment Status</label>
+                <select name="emp" id="emp" required>
+                    <option value="select_option">Select Option</option>
+                    <option value="student">Student</option>
+                    <option value="employed_full_time">Employed Full-time</option>
+                    <option value="employed_part_time">Employed Part-time</option>
+                    <option value="retired">Retired</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>How did you hear about our site?</legend>
+                <input type="radio" name="redirect" value="social_media" required>
+                <label>Social Media</label>
+                <br>
+                <input type="radio" name="redirect" value="friend">
+                <label>Friend</label>
+                <br>
+                <input type="radio" name="redirect" value="search_engine">
+                <label>Search Engine</label>
+                <br>
+                <input type="radio" name="redirect" value="other">
+                <label>Other</label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Tell Us What You Think!</legend>
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="70" required placeholder="Please provide your comments"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Submit</legend>
+                <input type="checkbox" name="robo_check" id="robo_check">
+                <label for="robo_check">I am not a robot</label>
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </main>
+    <aside>
+        <h2>Up Coming Classes</h2>
+        <ul>
+            <li>Indian</li>
+            <li>Italian</li>
+            <li>Chinese</li>
+            <li>Mexican</li>
+        </ul>
+    </aside>
+    <footer>
+        <p>
+            &copy; 2023 Sanampreet Singh 8870968
+        </p>
+    </footer>
+</body>
+
+</html>

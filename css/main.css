@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0.1% 0.1%;
+    width: 95vw;
+    border: 10px double lightslategray;
+    font: italic small-caps 20px/20px Times New Roman;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    max-height: 150px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+header h1 {
+    display: inline-block;
+    max-height: 150px;
+}
+
+nav {
+    background-color: darkred;
+    text-align: right;
+    min-height: 60px;
+    line-height: 200%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: larger;
+    margin: 0;
+    padding: 7px 15px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+nav ul li:hover a {
+    background-color: lightgrey;
+    color: black;
+    transition: 0.3s;
+}
+
+aside {
+    float: right;
+    width: 33.33%;
+    min-height: 80vh;
+    color: black;
+}
+
+aside h2 {
+    text-decoration: underline;
+    color: black;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    padding-top: 15px;
+    color: black;
+}
+
+main {
+    float: left;
+    width: 66.66%;
+    min-height: 100px;
+    background-color: darkslateblue;
+    min-height: 80vh;
+}
+
+main h2 {
+    text-decoration: underline;
+}
+
+main img {
+    height: 450px;
+    width: 100%;
+}
+
+main figure,
+iframe {
+    width: 100%;
+}
+
+header,
+nav,
+footer {
+    border: 5px solid lightsteelblue;
+    padding: 10px;
+    margin: 1px;
+}
+
+
+footer {
+    clear: both;
+    background-color: black;
+    padding: 1vh;
+    margin: 0;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    font-size: smaller;
+}
+
+select,
+option,
+input {
+    color: black;
+}
+
+label {
+    display: inline-block;
+    min-width: 250px;
+}
+
+label,
+input {
+    margin: 3px 0;
+    padding: 3px;
+}
+
+form input[type=submit],
+form input[type=reset] {
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    border-radius: 29px;
+    display: inline-block;
+    padding: 10px 50px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    main{
+        width: 100%;
+        float: none;
+    }
+    aside{
+        width: 100%;
+        float: none;
+        min-height: 20vh;
+    }
+    *{
+        font-size: 0.9em;
+    }
+    header h1 {
+        font-size: larger;
+    }
+
+    #logo{
+        height: 100px;
+    }
+
+    main figure img{
+        height: 200px;
+    }
+
+    form textarea{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 615px) {
+    *{
+        font-size: 0.9em;
+    }
+    header h1 {
+        font-size: larger;
+    }
+
+    main figure img{
+        height: 200px;
+    }
+
+    form textarea{
+        width: 100%;
+    }
+}

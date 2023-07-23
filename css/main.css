@@ -140,7 +140,8 @@ footer p {
 
 select,
 option,
-input {
+input ,
+textarea {
     color: black;
 }
 
